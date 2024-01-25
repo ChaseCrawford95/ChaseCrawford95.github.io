@@ -1,0 +1,629 @@
+body{
+    background-color: #141618;
+    margin: 0px;
+    overflow-x: hidden;
+    font-family: Mercury Display A,Mercury Display B,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+}
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+::-webkit-scrollbar-thumb {
+    background-color: #141618; 
+    border-radius: 6px; 
+}
+  
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+#NavigationBar{
+    position: relative;
+    background-color: #141618;
+    bottom: 1px;
+    width: 100%;
+    height: 100px;
+}
+
+ #NavigationBar a{
+    text-decoration: none;
+    color: white;
+    z-index: 4;
+    margin: 10px;
+
+}
+#Name{
+    position: absolute;
+    left: 10px;
+}
+#NavItems{
+    position: absolute;
+    left: 900px;
+    bottom: 45px;
+}
+#AboutMeAnchor{
+    opacity: 0.5;
+}
+#AboutMeAnchor:hover{
+    opacity: 1;
+}
+#PortfolioAnchor{
+    opacity: 0.5;
+}
+#PortfolioAnchor:hover{
+    opacity: 1;
+    color: blue;
+}
+#ResumeAnchor{
+    opacity: 0.5;
+}
+#ResumeAnchor:hover{
+    opacity: 1;
+    color: #ffa500;
+}
+#ContactAnchor{
+    opacity: 0.5;
+}
+#ContactAnchor:hover{
+    opacity: 1;
+    color: red;
+}
+
+#WorkAreas{
+    position: relative;
+    width: 100%;
+    height: 460px;
+    background-color: #141618; 
+    z-index: 1;
+}
+#WorkAreash2{
+    color: white;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    left: 33px;
+    top: 35px;
+}
+
+#MyAreas{
+    position: relative;
+}
+
+#WorkAreas img{
+    height: 180px;
+    width: 180px;
+}
+
+#GeneralSWE{
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    top: 80px;
+
+}
+#BlueBall{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    background-color: #0000ff;
+    left: 100px;
+    bottom: 175px;
+
+}
+#GeneralSWE:hover{
+    animation: Rise1 1.5s ease forwards;
+}
+#Text1{
+    position: absolute;
+    left: 150px;
+    bottom: 190px;
+    color: white;
+}
+@keyframes Rise1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-45px);
+    }
+    100% {
+        transform: translateY(-45px);
+    }
+}
+@keyframes Drop1 {
+    0% {
+        transform: translateY(-45px);
+    }
+    50% {
+        transform: translateY(-45px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes BlueBallRise {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes BlueBallExpand {
+    from{
+        transform: scale(1);
+    } 
+    to{
+        transform: scale(9,2.18);       
+        border-radius: 0;
+    }
+}
+@keyframes Text1Drop {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(40px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+@keyframes Text1Rise {
+    0%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes BlueBallShrink {
+    from{
+        transform: scale(9,1.6);       
+        border-radius: 0;
+    }
+    to{
+        transform: scale(1);
+    }
+}
+#WebDevelopment{
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+
+    left: 530px;
+    bottom: 420px;
+}
+#OrangeBall{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px;
+    background-color: #ffa500;
+    left: 530px;
+    bottom: 675.1px;
+
+}
+#WebDevelopment :hover{
+    animation: Rise2 1.5s ease forwards;
+}
+#Text2 {
+    position: absolute;
+    left: 590px;
+    bottom: 200px;
+    color: white;
+}
+@keyframes Rise2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
+    100% {
+        transform: translateY(-25px);
+    }
+}
+
+@keyframes OrangeBallRise {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes OrangeBallExpand {
+    from{
+        transform: scale(1);
+    } 
+    to{
+        transform: scale(9,2.18);       
+        border-radius: 0;
+    }
+}
+@keyframes Text2Drop {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(45px);
+    }
+    100%{
+        transform: translateY(45px);
+    }
+}
+@keyframes Text2Rise {
+    0%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes OrangeBallShrink {
+    from{
+        transform: scale(9,1.6);       
+        border-radius: 0;
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+#MobileDevelopment {
+    position: relative;
+    display: flex;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    bottom: 920px;
+    left: 930px;
+
+    transition: all 1.5s ease;
+}
+#RedBall {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    bottom: 1175.1px;
+    left: 930px;
+
+    transition: all 3s ease;
+}
+#MobileDevelopment:hover {
+    animation: Rise3 1.5s ease forwards;
+}
+#Text3 {
+    position: absolute;
+    left: 1010px;
+    bottom: 160px;
+    color: white;
+}
+@keyframes Rise3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+@keyframes Text3Drop {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(18px);
+    }
+    100%{
+        transform: translateY(18px);
+    }
+}
+@keyframes Text3Rise {
+    0%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+@keyframes RedBallRise {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+@keyframes RedBallExpand {
+    from{
+        transform: scale(1);
+    } 
+    to{
+        transform: scale(9,2.18);       
+        border-radius: 0;
+    }
+}
+@keyframes RedBallShrink {
+    from{
+        transform: scale(9,1.6);       
+        border-radius: 0;
+    }
+    to{
+        transform: scale(1);
+    }
+}
+#CitySkyline{
+    position: relative;
+}
+#CitySkyline img{
+    position: relative;
+    width: 100%;
+    height: 650px;
+    z-index: 1;
+    filter: brightness(80%);
+}
+#AboutMe{
+    position: relative;
+    z-index: 3;
+    left: 100px;
+    bottom: 550px;
+    width: 1100px;
+}
+#AboutMeh2{
+    position: relative;
+    color: white;
+    font-size: larger;
+    left: 100px;
+    bottom: 600px;
+    z-index: 3;
+
+}
+#ProfilePicture img{
+    height: 180px;
+    width: 180px;
+    float: left; 
+    border-radius: 50%;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+#AboutMePara p{
+    position: relative;
+    text-align: justify;
+    font-size: 15px;
+    margin-right: 500px;
+    color: rgba(255, 255, 255, 1);
+    filter: brightness(200%);
+}
+#AboutMeContainer{
+    position: absolute;
+    background-color: #141618;
+    height: 500px;
+    width: 685px;
+    left: -30px;
+    top: -50px;
+    opacity: 0.25;
+    z-index: 2;
+}
+
+#VerticalLine{
+    position: absolute;
+    background-color: white;
+    width: 2px;
+    height: 500px;
+    z-index: 3;
+    right: 1129px;
+    top: -50px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+#AboutMeContainer:hover + #VerticalLine{
+    opacity: 1;
+}
+
+#image1 {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 460px;
+    z-index: 2;
+    filter: invert(1);
+    transition: ease 0.3s;
+    opacity: 0.5;
+}
+#image1:hover {
+    opacity: 1;
+    filter: invert(9%) sepia(98%) saturate(7215%) hue-rotate(247deg) brightness(91%) contrast(146%);
+
+}
+#image2 {
+    position: absolute;
+    left: 510px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    filter: invert(1);
+    transition: ease 0.3s;
+    opacity: 0.5;
+}
+#image2:hover {
+    opacity: 1;
+    filter: invert(78%) sepia(30%) saturate(7469%) hue-rotate(1deg) brightness(104%) contrast(104%);
+    
+}
+#image3 {
+    position: absolute;
+    left: 560px;
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+    filter: invert(1);
+    transition: ease 0.3s;
+    opacity: 0.5;
+    
+}
+#image3:hover {
+    filter: invert(22%) sepia(88%) saturate(5505%) hue-rotate(354deg) brightness(91%) contrast(123%);
+    opacity: 1;
+}
+
+#ToolBelt{
+    position: relative;
+    width: 100%;
+    height: 850px;
+    bottom: 464px;
+    background-color: green;
+}
+#MyToolBelth2{
+    color: white;
+    position: absolute;
+    z-index: 2;
+    position: absolute;
+    left: 590px;
+    top: 20px;
+
+}
+#BackEndTools{
+    position: absolute;
+    background-color: white;
+    height: 760px;
+    width: 500px;
+    left: 50px;
+    top: 90px;
+}
+#BackEndToolsh3{
+    position: absolute;
+    color: black;
+    left: 170px;
+}
+#PythonBox{
+    position: absolute;
+    background-color: black;
+    left: 50px;
+    bottom: 600px;
+    width: 395px;
+    height: 70px;
+}
+#JavaBox{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 500px;
+    width: 395px;
+    height: 70px;
+}
+#CBox{
+    position: absolute;
+    background-color: red;
+    left: 50px;
+    bottom: 400px;
+    width: 395px;
+    height: 70px;
+}
+#AssemblyBox{
+    position: absolute;
+    background-color: blue;
+    left: 50px;
+    bottom: 300px;
+    width: 395px;
+    height: 70px;
+}
+#KotlinBox{
+    position: absolute;
+    background-color: purple;
+    left: 50px;
+    bottom: 200px;
+    width: 395px;
+    height: 70px;
+}
+#SwiftBox{
+    position: absolute;
+    background-color: yellow;
+    left: 50px;
+    bottom: 100px;
+    width: 395px;
+    height: 70px;
+}
+#JavaScriptBox{
+    position: absolute;
+    background-color: aqua;
+    left: 50px;
+    bottom: 0px;
+    width: 395px;
+    height: 70px;
+}
+#FrontEndTools{
+    position: absolute;
+    background-color: blue;
+    height: 760px;
+    width: 500px;
+    left: 750px;
+    top: 90px;
+}
+#FrontEndToolsh3{
+    position: absolute;
+    color: black;
+    left: 170px;
+}
+#HTMLBox{
+    position: absolute;
+    background-color: black;
+    left: 50px;
+    bottom: 600px;
+    width: 395px;
+    height: 70px;  
+}
+#CSSBox{
+    position: absolute;
+    background-color: green;
+    left: 50px;
+    bottom: 500px;
+    width: 395px;
+    height: 70px;
+}
+#icon{
+    width: 100px;
+    height: 100px;
+}
+#ContactMe{
+    position: relative;
+}
+footer{
+    position: relative;
+}
